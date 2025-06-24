@@ -1,0 +1,288 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    color: #333;
+    line-height: 1.6;
+    background: #f9f9f9;
+    position: relative;
+  }
+  
+  .top-left-corner
+  {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 150px;
+    border-bottom-right-radius: 150%;
+    background-color:#f3f9b2cc;
+  }
+
+  
+  header {
+    background: #fff;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .logo {
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-left: 80px;
+    z-index: 999;
+
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #191919;
+    font-weight: 400;
+   font-size: 20px; 
+  }
+  
+  nav .btn {
+    background: #002b6c;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+  }
+  
+  .hero {
+    position: relative;
+    height: 490px;
+    overflow: hidden;
+    text-align: center;
+    
+
+  }
+  
+  .hero svg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .hero-text h1{
+    font-size: 55px;
+    font-style: italic;
+
+  }
+  .hero-text {
+    position: absolute;
+    bottom: 20px;
+    left: 500px;
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+    
+  }
+  
+  .services {
+    padding: 3rem 2rem;
+    background: #fff;
+    text-align: center;
+  }
+  .services h2{
+    font-size:50px;
+    color: rgba(1, 1, 72, 0.897);
+  }
+  .services p{
+    max-width: 800px;
+    text-align: center;
+    margin: 15px auto;
+    font-size: 18px;
+
+  }
+  .cardd{
+    display: flex;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(250px,3);    
+  }
+  .card svg{
+    float: left;
+    margin-left: 0px;
+    position: relative;
+    z-index: 999;
+  }
+  .service-cards {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  
+  .card {
+    background: #eef0f4;
+    padding: 1rem;
+    width: 250px;
+    border-radius: 8px;
+    
+  }
+  
+  .card:nth-child(3) {
+    background: #fbdde3;
+  }
+  .card p{
+    font-size: 1rem;
+    text-align: left;
+    margin-top: 165px;
+    line-height: 22px;
+  }
+  
+  .card h3 {
+    margin-bottom: 0.2rem;
+    display: block;
+    text-align: left;
+    font-size: 29px;
+    position:absolute;
+    top:90px;
+    left:10;
+    color: rgba(1, 1, 72, 0.897);
+  }
+  
+  .cardd a {
+    display: inline-block;
+    margin-top: 1rem;
+    color: #002b6c;
+    text-decoration: none;
+    text-align: left;
+    margin-left: 10px;
+  }
+  #card1{
+    background-color: #c3c3c4be;
+  }
+  #card2{
+    background-color: #f4f8c9b0;
+  }
+  #card3{
+    background-color: rgba(246, 90, 33, 0.5);
+  }
+  #c1{
+    background-color: #e2e2e4f9;
+  }
+  #c2{
+    background-color:#f3f9b2fc;
+  }
+  #c3{
+    background-color:rgba(254, 158, 124, 0.978) ;
+  }
+  .card-left-corner
+  {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 175px;
+    border-bottom-right-radius: 150%;
+  }
+  
+  .quote {
+    background: #f3f3f3;
+    padding: 2rem;
+    font-size: 25px;
+    padding: 70px;
+  }
+  .quote p{
+    width: 900px;
+    margin: 0px auto;
+    text-align: center;
+  }
+  .quote strong{
+    color: rgba(230, 230, 7, 0.824);
+    font-style: italic;
+
+  }
+  .down{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+  }
+  .agenda {
+    background: #fff;
+    padding: 0rem 2rem;
+    text-align: left;
+  }
+  .agenda h2{
+    font-size: 40px;
+    color: #002b6cca;
+    margin-bottom: 0px;
+  }
+  .agenda .sub-text{
+    margin-top: 2px;
+    padding-top: 3px;
+    font-size: 25px;
+    color: rgba(245, 245, 3, 0.961);
+    width: 450px;
+    font-weight: bold;
+  }
+  .agenda p{
+    padding-top: 0px;
+    margin-top: 0px;
+  }
+  
+  .agenda ul {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0;
+  }
+  ul strong{
+    display: inline-block;
+    width: 380px;
+  }
+  
+  .agenda li {
+    margin: 0.4rem 0;
+  }
+  .line{
+    width: 450px;
+    height:2px;
+    background-color: black;
+  }
+  
+  .agenda .btn {
+    background: #dc8c91;
+    border: none;
+    padding: 0.5rem 1rem;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  footer {
+    background: #f0f0f0;
+    padding: 2rem;
+  }
+  
+  .footer-columns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 0.5rem;
+    margin: 20px 30px;
+
+  }
+  
+  footer ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  footer h4 {
+    margin-bottom: 0.5rem;
+  }
+  
+  .bottom-text {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 0.85rem;
+  }
+  
