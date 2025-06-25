@@ -86,7 +86,7 @@ body {
   .hero-text {
     position: absolute;
     bottom: 10px;
-    top: 40%;
+    top: 45%;
     left: 40%;
     color: white;
     font-size: 1.5rem;
@@ -213,6 +213,7 @@ body {
     justify-content: center;
     gap: 2rem;
   }
+  
   .agenda {
     background: #fff;
     padding: 0rem 2rem;
@@ -310,14 +311,15 @@ body {
     }
     .hero{
       width: 100%;
-      height: auto;
       position: relative;
     }
     
     .hero svg{
-      height: 100%;
       position: absolute;
       z-index: -1;
+      width: 100%;
+      margin: 20px auto;
+     
 
     }
     .agenda h2,.services h2{
@@ -328,6 +330,10 @@ body {
     }
     .card{
       width: 100%;
+    }
+    .down svg{
+      width: 100%;
+      margin: 20px auto;
     }
     .service-cards{
       flex-direction:column;
@@ -352,8 +358,16 @@ body {
       object-fit: cover;
     }
     
+    .hero-text h1{
+      font-size: 30px;
+    }
+    .hero-text p{
+      font-size: 20px;
+    }
     .hero-text{
       position:static;
+      font-size: 20px;
+      top: 60%;
     }
     .service-cards{
       width:90%;
