@@ -35,30 +35,6 @@ body {
 
   }
   
-  nav ul {
-    display: flex;
-    list-style: none;
-    gap: 1.5rem;
-    flex-wrap:wrap;
-
-    
-  }
-  
-  nav a {
-    text-decoration: none;
-    color: #191919;
-    font-weight: 400;
-   font-size: 20px; 
-  }
-  
-  nav .btn {
-    background: #002b6c;
-    color: white;
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
-  }
-  
-  
   .services {
     padding: 3rem 2rem;
     background: #fff;
@@ -295,9 +271,12 @@ body {
     font-size: 1.25rem;
     margin-top: 0.5rem;
   }
+  
+  
+  
 
   @media (max-width:1024px){
-   
+
     .hero .hero-text h1{
       font-size: 3.5rem;
     }
@@ -323,11 +302,11 @@ body {
       flex-direction:column;
       gap: 2rem;
     }
+
     
     
   }
   @media (max-width:768px){
-    
     .logo{
       margin-left:0
     }
@@ -342,11 +321,7 @@ body {
     .hero .hero-text p{
       font-size: 0.7rem;
     }
-    
-    
-    
-    
-    
+
     .service-cards{
       display: flex;
       flex-direction:column;
@@ -359,12 +334,8 @@ body {
     }
     .card{
       width: 100%;
-
-
-
     }
-    
-    .quote p,
+      .quote p,
     .agenda .sub-text,
     .agenda ul strong{
       width:100%;
@@ -392,5 +363,125 @@ body {
       font-size:1.1rem;
     }
 
+  }
+  #menuButton {
+    position: fixed;
+    top: 20px;
+    left: 75%;
+    font-size: 54px;
+    cursor: pointer;
+    z-index: 1000;
+    display: none;
+  }
+
+  nav {
+    position: fixed;
+    top: 0;
+    right: -340px;
+    width: 300px;
+    height: 100vh;
+    background-color:white;
+    color: rgb(29, 7, 195);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+    z-index: 999;
+  }
+
+  nav.open {
+    transform: translateX(-300px);
+  }
+
+  #closeButton {
+    margin-left: 188px;
+
+    font-size: 54px;
+    cursor: pointer;
+    margin-bottom: 20px;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 1.5rem;
+    padding: 0;
+    margin: 0;
+  }
+
+  nav a {
+    text-decoration: none;
+    color: #002b6c;
+    font-weight: 400;
+    font-size: 20px;
+  }
+
+  nav .btn {
+    background: #002b6c;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+  }
+
+  /* Large screens - full navbar */
+  @media (min-width: 992px) {
+    #menuButton {
+      display: none;
+    }
+    nav{
+      transform: none !important;
+      position: absolute;
+      top: 40px;
+      height: 20px;
+      width: 70%;
+      left: 360px;
+      display: flex;
+      background-color: transparent;
+      box-shadow: none;
+      
+
+    }
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 1.5rem;
+      flex-wrap:wrap;
+      
+    }
+    
+    nav a {
+      text-decoration: none;
+      color: #191919;
+      font-weight: 400;
+     font-size: 20px; 
+    }
+    
+    nav .btn {
+      background: #002b6c;
+      color: white;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+    }
+    #closeButton {
+      display: none;
+    }
+
+    nav ul {
+      flex-direction: row;
+      gap: 2rem;
+    }
+
+    nav a {
+      color: #002b6c;
+    }
+  }
+
+  /* Small screens - show menu button */
+  @media (max-width: 991px) {
+    #menuButton {
+      display: block;
+    }
   }
   
