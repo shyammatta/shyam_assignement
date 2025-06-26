@@ -20,12 +20,10 @@ body {
 
   
   header {
-    background: #fff;
     padding: 1rem 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid #ddd;
     flex-wrap:wrap;
   }
   
@@ -60,39 +58,6 @@ body {
     border-radius: 5px;
   }
   
-  .hero {
-    position: relative;
-    height: 495px;
-    width: 100%;
-    overflow: hidden;
-    text-align: center;
-    
-
-  }
-  
-  .hero svg {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-  .hero-text h1{
-    font-size: 3rem;
-    font-style: italic;
-
-  }
-  .hero-text {
-    position: absolute;
-    bottom: 10px;
-    top: 45%;
-    left: 40%;
-    color: white;
-    font-size: 1.5rem;
-    text-align: center;
-    
-  }
   
   .services {
     padding: 3rem 2rem;
@@ -111,7 +76,6 @@ body {
 
   }
   .cardd{
-    display: flex;
     position: relative;
     display: grid;
     grid-template-columns: repeat(250px,3);    
@@ -123,11 +87,11 @@ body {
     z-index: 999;
   }
   .service-cards {
-    display: flex;
-    flex-wrap:wrap;
     justify-content: center;
     gap: 2rem;
     margin-top: 2rem;
+    width: 100%;
+    display: flex;
   }
   
   .card {
@@ -294,89 +258,115 @@ body {
     margin-top: 2rem;
     font-size: 0.85rem;
   }
+  .hero {
+    position: relative;
+    width: 100%;
+    height: 60vh;
+    min-height: 420px;
+    overflow: hidden;
+    
+
+  }
+  
+  .hero svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+    
+  }
+  .hero-text {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    font-size: 1.5rem;
+    z-index: 2;
+    
+  }
+  .hero-text h1{
+    font-size: 3rem;
+    font-style: italic;
+    margin: 0;
+
+  }
+  .hero-text p{
+    font-size: 1.25rem;
+    margin-top: 0.5rem;
+  }
 
   @media (max-width:1024px){
-    .hero-text {
-      position: absolute;
-      z-index: 999;
-      top: 20%;
-      
-      
+   
+    .hero .hero-text h1{
+      font-size: 3.5rem;
     }
-    .hero-text h1{
-      font-size: 40px;
-    }
-    .hero-text p{
-      font-size: 30px;
-    }
-    .hero{
-      width: 100%;
-      position: relative;
+    .hero .hero-text p{
+      font-size: 1.5rem;
     }
     
-    .hero svg{
-      position: absolute;
-      z-index: -1;
-      width: 100%;
-      margin: 20px auto;
-     
-
-    }
     .agenda h2,.services h2{
       font-size:2rem;
     }
     .cardd{
       width:100%;
+      max-width: 600px;
+      margin-top: 10px;
+
     }
-    .card{
-      width: 100%;
-    }
+    
     .down svg{
       width: 100%;
       margin: 20px auto;
     }
     .service-cards{
       flex-direction:column;
-      align-items:center;
+      gap: 2rem;
+      
+
+
+
     }
     
   }
   @media (max-width:768px){
-    body{
-      width: 100%;
-    }
+    
     .logo{
       margin-left:0
     }
+    
     nav ul{
       flex-direction:column;
     }
-    .hero{
-      height: auto;
+    .hero .hero-text h1{
+      font-size: 2rem;
     }
-    .hero svg{
-      object-fit: cover;
+    .hero .hero-text p{
+      font-size: 0.7rem;
     }
     
-    .hero-text h1{
-      font-size: 30px;
-    }
-    .hero-text p{
-      font-size: 20px;
-    }
-    .hero-text{
-      position:static;
-      font-size: 20px;
-      top: 60%;
-    }
+    
+    
+    
     .service-cards{
-      width:90%;
+      display: flex;
       flex-direction:column;
-      align-items:center;
+      display: block;
+      margin: 20px auto;
     }
     .cardd{
-      width:90%
+      width:90%;
+
     }
+    .card{
+      width: 100%;
+
+
+
+    }
+    
     .quote p,
     .agenda .sub-text,
     .agenda ul strong{
